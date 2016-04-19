@@ -10,7 +10,7 @@ class ContactRank
 		f = File.read(path)
 		contacts = JSON.parse(f)
 		# ranking is a hash with the index as key and point as value
-		ranking = {}
+		ranking = []
 
 		contacts.each_with_index do |contact, index|
 			points = 0
@@ -18,11 +18,19 @@ class ContactRank
 			contact.each do |k, v|	
 				case k
 				when "name"
-					
-				when "email"
-				when "phone"
+
+					points += 2 if v.include?(query)
+
+				when "email" || "phone"
+					points += 1 if v.include?(query)
 				end
 			end
+
+			ranking[index] = points
 		end	
+
+		filtered_contact_index = ranking.each_with_index.max[1]
+		return [contacts[filtered_contact_index]]
+
 	end
 end
