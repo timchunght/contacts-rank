@@ -6,7 +6,7 @@ class ContactsRank
 	def self.rank(query)
 		# temporarily hardcoded for testing
 		path = "./lib/contacts.json"
-
+		query = query.downcase
 		f = File.read(path)
 		contacts = JSON.parse(f)
 		# ranking is a hash with the index as key and point as value
