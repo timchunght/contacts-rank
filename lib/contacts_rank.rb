@@ -3,7 +3,7 @@ class ContactRank
 	def initialize
 	end
 
-	def self.import(query)
+	def self.rank(query)
 		# temporarily hardcoded for testing
 		path = "./lib/contacts.json"
 
