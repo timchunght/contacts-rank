@@ -1,8 +1,9 @@
 According to the result:
 
 * All results are case INsensitivea
-* Match to name is weighted more than match to email
+* Match to name is weighted more than match to email because there are emails that contain "z" but not shown
 * Exact substring match preferred
+* Max of 1 result per search
 
 These are the three criteria that I am using to write my algorithm
 
