@@ -12,7 +12,11 @@ These are the criteria that I am using to write my algorithm
 
 This is a very simple algorithm with with a weight structure as in elasticsearch. 
 
-I did notice that the result given as examples do not exist in the actual json file. For example, the example is "email": "jj@yahoo.com" but the json is "email": "jj@Yahoo.com" with a capital "Y". Same for "zed" and "Zed". Is that intentional? ``Nonetheless, I am assuming this is a typo and I am changing the test cases to match the data.`` If this is not a typo, then I should probably format the result like downcasing email and capitalizing name.``
+### Interesting observation
+
+I did notice that the result given as examples do not exist in the actual json file. For example, the example is ``"email": "jj@yahoo.com"`` but the json is ``"email": "jj@Yahoo.com"`` with a capital ``"Y"``. Same for ``"zed"`` and ``"Zed"``. Is that intentional? 
+
+Nonetheless, I am assuming this is a typo and I am changing the test cases to match the data. If this is not a typo, then I should probably format the result like downcasing email and capitalizing name.
 
 ### Installation
 
@@ -25,7 +29,7 @@ chmod +x contacts-rank.rb
 ### Test Suite
 
 ```
-rpsec spec/*
+rspec spec/*
 ```
 
 Tested with ``rspec 3.4.0`` and ``ruby 2.1.1`` or ``ruby 2.2.1``
