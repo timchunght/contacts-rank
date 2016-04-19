@@ -7,7 +7,7 @@ describe "ContactsRank" do
 
  		expected = [
 	    {
-        "name" => "Zed",
+        "name" => "zed",
         "email" => "zz@zed.com",
         "phone" => "111.111.4444"
 	    }
@@ -21,7 +21,7 @@ describe "ContactsRank" do
 
  		expected = [
 		  {
-		      "name" => "Zed",
+		      "name" => "zed",
 		      "email" => "zz@zed.com",
 		      "phone" => "111.111.4444"
 		  }
@@ -36,7 +36,7 @@ describe "ContactsRank" do
  		expected = [
 		  {
 	      "name" => "Jenny J",
-	      "email" => "jj@yahoo.com"
+	      "email" => "jj@Yahoo.com"
 		  }
 		]
 

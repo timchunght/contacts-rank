@@ -18,11 +18,11 @@ class ContactRank
 			contact.each do |k, v|	
 				case k
 				when "name"
-
-					points += 2 if v.include?(query)
-
+					points += 2 if v.downcase.include?(query)
 				when "email" || "phone"
-					points += 1 if v.include?(query)
+					if v.downcase.include?(query)
+						points += 1
+					end
 				end
 			end
 

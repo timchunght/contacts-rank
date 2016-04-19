@@ -1,11 +1,25 @@
-According to the result:
+# Contacts Rank
+---
 
-* All results are case INsensitivea
+### According to the result:
+
+* Case insensitive @yahoo might get matched to @Yahoo
 * Match to name is weighted more than match to email because there are emails that contain "z" but not shown
 * Exact substring match preferred
 * Max of 1 result per search
 
-These are the three criteria that I am using to write my algorithm
+These are the criteria that I am using to write my algorithm
+
+This is a very simple algorithm with with a weight structure as in elasticsearch. 
+
+I did notice that the result given as examples do not exist in the actual json file. For example, the example is "email": "jj@yahoo.com" but the json is "email": "jj@Yahoo.com" with a capital "Y". Same for "zed" and "Zed". Is that intentional? ``Nonetheless, I am assuming this is a typo and I am changing the test cases to match the data.`` If this is not a typo, then I should probably format the result like downcasing email and capitalizing name.``
+
+### Installation
+
+```
+bundle install
+rspec spec
+```
 
 ```
 ./contacts-rank.rb z
