@@ -1,5 +1,5 @@
 require 'json'
-class ContactRank
+class ContactsRank
 	def initialize
 	end
 

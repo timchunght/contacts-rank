@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "ContactsRank" do
  	
  	it "generates correct result for z" do
- 		result = ContactRank.rank("z")
+ 		result = ContactsRank.rank("z")
 
  		expected = [
 	    {
@@ -17,7 +17,7 @@ describe "ContactsRank" do
  	end
 
  	it "generates correct result for zz" do
- 		result = ContactRank.rank("zz")
+ 		result = ContactsRank.rank("zz")
 
  		expected = [
 		  {
@@ -31,7 +31,7 @@ describe "ContactsRank" do
  	end
 
  	it "generates correct result for @yahoo" do
- 		result = ContactRank.rank("@yahoo")
+ 		result = ContactRanks.rank("@yahoo")
 
  		expected = [
 		  {
