@@ -18,8 +18,19 @@ I did notice that the result given as examples do not exist in the actual json f
 
 ```
 bundle install
-rspec spec
+chmod +x contacts-rank.rb
+./contacts-rank z
 ```
+
+### Test Suite
+
+```
+rpsec spec/*
+```
+
+Tested with ``rspec 3.4.0`` and ``ruby 2.1.1`` or ``ruby 2.2.1``
+
+### Examples
 
 ```
 ./contacts-rank.rb z

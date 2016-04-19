@@ -31,7 +31,7 @@ describe "ContactsRank" do
  	end
 
  	it "generates correct result for @yahoo" do
- 		result = ContactRanks.rank("@yahoo")
+ 		result = ContactsRank.rank("@yahoo")
 
  		expected = [
 		  {
