@@ -3,14 +3,17 @@ class ContactRank
 	def initialize
 	end
 
-	def self.rank(query)
+	def self.import(query)
 		# temporarily hardcoded for testing
-		path = "./contacts.json"
+		path = "./lib/contacts.json"
 
 		f = File.read(path)
 		contacts = JSON.parse(f)
-		puts contacts.to_json
+		result =  contacts[19]
+		return [result]
 	end
-end
 
-ContactRank.rank("z")
+	def filter(hash)	
+	end
+
+end
